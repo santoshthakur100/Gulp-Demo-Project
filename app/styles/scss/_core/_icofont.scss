@@ -1,0 +1,593 @@
+// declare typography related items here
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../../assets/fonts/bootstrap/glyphicons-halflings-regular.eot');
+  src: url('../../assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+       url('../../assets/fonts/bootstrap/glyphicons-halflings-regular.woff2') format('woff2'),
+       url('../../assets/fonts/bootstrap/glyphicons-halflings-regular.woff') format('woff'),
+       url('../../assets/fonts/bootstrap/glyphicons-halflings-regular.ttf') format('truetype'),
+       url('../../assets/fonts/bootstrap/glyphicons-halflings-regular.svg#@{icon-font-svg-id}') format('svg');
+}
+
+// Catchall baseclass
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Added by VML-FED-SA (Refactoring)
+************************************/
+// Ford GUX Font
+$gux-icons    : "../../assets/fonts/icofont/";
+@font-face {
+  font-family: "FordGUXFont";
+  src:url('#{$gux-icons}gux-icons.eot?-mduxqz');
+  src:url('#{$gux-icons}gux-icons.eot?-mduxqz#iefix') format('embedded-opentype'),
+    url('#{$gux-icons}gux-icons.ttf?-mduxqz') format('truetype'),
+    url('#{$gux-icons}gux-icons.woff?-mduxqz') format('woff'),
+    url('#{$gux-icons}gux-icons.svg?-mduxqz#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="gux-icon-"],
+[class*=" gux-icon-"], {
+  font-size: 28px;
+  font-family: "FordGUXFont";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-rendering: auto;
+  text-transform: none;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// ADDITIONAL FONTS
+.gux-icon-fleet-outline:before{
+  content: "\ef31";
+}
+
+.gux-icon-tech-outline:before{
+  content: "\e6ab";
+}
+
+.gux-icon-vehicle-showroom-outline:before{
+  content: "\ef20";
+}
+
+.gux-icon-contact-phone:before { content: "\e646" }
+.gux-icon-contact-social-assist:before { content: "\e682" }
+.gux-icon-contact-email:before { content: "\e685" }
+.gux-icon-towing-125px:before { content: "\e6ec" }
+.gux-icon-action-calendar-25px:before { content: "\e001" }
+.gux-icon-contact-mail:before { content: "\e684" }
+.gux-icon-action-call-25px:before { content: "\e002" }
+.gux-icon-action-call-outline-50px:before { content: "\e003" }
+.gux-icon-action-call-solid-50px:before { content: "\e004" }
+.gux-icon-action-delete-25px:before { content: "\e005" }
+.gux-icon-action-email-25px:before { content: "\e006" }
+.gux-icon-action-print-25px:before { content: "\e007" }
+.gux-icon-action-send-phone-25px:before { content: "\e008" }
+.gux-icon-action-send-to-dealer-25px:before { content: "\e009" }
+.gux-icon-alert-solid-25px:before { content: "\e00a" }
+.gux-icon-bp-chevron-down-50px:before { content: "\e00b" }
+.gux-icon-check-25px:before { content: "\e00c" }
+.gux-icon-check-solid-25px:before { content: "\e00e" }
+.gux-icon-check-outline-25px:before { content: "\e00d" }
+.gux-icon-chevron-outline-25px:before { content: "\e00f" }
+.gux-icon-chevron-solid-25px:before { content: "\e010" }
+.gux-icon-close-outline-25px:before { content: "\e011" }
+.gux-icon-close-solid-25px:before { content: "\e012" }
+.gux-icon-commercial-model-outline-50px:before { content: "\e013" }
+.gux-icon-commercial-model-solid-50px:before { content: "\e014" }
+.gux-icon-commercial-models-25px:before { content: "\e015" }
+.gux-icon-estimate-payment-50px:before { content: "\e016" }
+.gux-icon-contact-locate-dealer:before { content: "\e017" }
+.gux-icon-fullscreen-25px:before { content: "\e018" }
+.gux-icon-image-expand-25px:before { content: "\e019" }
+.gux-icon-locate-dealer-action-25px:before { content: "\e01a" }
+.gux-icon-minus-outline-50px:before { content: "\e01b" }
+.gux-icon-minus-solid-50px:before { content: "\e01c" }
+.gux-icon-notes-25px:before { content: "\e01d" }
+.gux-icon-owner-advantage-rewards-125px:before { content: "\e01e" }
+.gux-icon-plus-outline-50px:before { content: "\e01f" }
+.gux-icon-plus-solid-50px:before { content: "\e020" }
+.gux-icon-save-star-outline:before { content: "\e021" }
+.gux-icon-save-star-solid:before { content: "\e022" }
+.gux-icon-share-25px:before { content: "\e023" }
+.gux-icon-sound-25px:before { content: "\e024" }
+.gux-icon-video-25px:before { content: "\e025" }
+.gux-icon-contact-social-assist-hash:before { content: "\e026" }
+.gux-icon-360-solid-50px:before { content: "\e600" }
+.gux-icon-360-outline-50px:before { content: "\e601" }
+.gux-icon-apply-for-credit-solid-50px:before { content: "\e602" }
+.gux-icon-apply-for-credit-outline-50px:before { content: "\e603" }
+.gux-icon-build-price-solid-50px:before { content: "\e604" }
+.gux-icon-certified-pre-owned-solid-50px:before { content: "\e606" }
+.gux-icon-certified-pre-owned-outline-50px:before { content: "\e607" }
+.gux-icon-build-price-outline-50px:before { content: "\e605" }
+.gux-icon-locatedealer-action-solid-50px:before { content: "\e608" }
+.gux-icon-locatedealer-action-outline-50px:before { content: "\e609" }
+.gux-icon-search-inventory-solid-50px:before { content: "\e60a" }
+.gux-icon-search-inventory-outline-50px:before { content: "\e60b" }
+.gux-icon-compare-solid-50px:before { content: "\e60c" }
+.gux-icon-compare-outline-50px:before { content: "\e60d" }
+.gux-icon-estimate-payment-solid-50px:before { content: "\e60e" }
+.gux-icon-estimate-payment-outline-50px:before { content: "\e60f" }
+.gux-icon-locate-dealer-indicator-solid-50px:before { content: "\e610" }
+.gux-icon-locate-dealer-indicator-outline-50px:before { content: "\e611" }
+.gux-icon-ford-credit-solid-50px:before { content: "\e612" }
+.gux-icon-ford-credit-outline-50px:before { content: "\e613" }
+.gux-icon-get-brochure-solid-50px:before { content: "\e614" }
+.gux-icon-get-brochure-outline-50px:before { content: "\e615" }
+.gux-icon-get-updates-solid-50px:before { content: "\e616" }
+.gux-icon-get-updates-outline-50px:before { content: "\e617" }
+.gux-icon-image-expand-solid-50px:before { content: "\e618" }
+.gux-icon-image-expand-outline-50px:before { content: "\e619" }
+.gux-icon-incentives-solid-50px:before { content: "\e61a" }
+.gux-icon-incentives-outline-50px:before { content: "\e61b" }
+.gux-icon-request-quote-solid-50px:before { content: "\e61c" }
+.gux-icon-request-quote-outline-50px:before { content: "\e61d" }
+.gux-icon-action-send-phone-solid-50px:before { content: "\e61e" }
+.gux-icon-action-send-phone-outline-50px:before { content: "\e61f" }
+.gux-icon-trade-in-solid-50px:before { content: "\e620" }
+.gux-icon-trade-in-outline-50px:before { content: "\e621" }
+.gux-icon-view-map-solid-50px:before { content: "\e622" }
+.gux-icon-wheels-solid-50px:before { content: "\e624" }
+.gux-icon-view-map-outline-50px:before { content: "\e623" }
+.gux-icon-wheels-outline-50px:before { content: "\e625" }
+.gux-icon-social-youtube-50px:before { content: "\e627" }
+.gux-icon-kabob-outline-25px:before { content: "\e62b" }
+.gux-icon-kabob-solid-25px:before { content: "\e62c" }
+.gux-icon-info-25px:before { content: "\e630" }
+.gux-icon-search-glass-25px:before { content: "\e633" }
+.gux-icon-question-outline-25px:before { content: "\e635" }
+.gux-icon-question-solid-25px:before { content: "\e636" }
+.gux-icon-email-outline-50px:before { content: "\e640" }
+.gux-icon-search-glass-outline-50px:before { content: "\e649" }
+.gux-icon-search-glass-solid-50px:before { content: "\e64a" }
+.gux-icon-email-solid-50px:before { content: "\e641" }
+.gux-icon-send-to-outline-25px:before { content: "\e64b" }
+.gux-icon-send-to-solid-25px:before { content: "\e64c" }
+.gux-icon-minus-25px:before { content: "\e652" }
+.gux-icon-plus-25px:before { content: "\e653" }
+.gux-icon-alert-outline-25px:before { content: "\e658" }
+.gux-icon-action-play-50px:before { content: "\e65e" }
+.gux-icon-new-window-25px:before { content: "\e661" }
+.gux-icon-action-chevron-left-25px:before { content: "\e662" }
+.gux-icon-vehicle-strippedchassis:before { content: "\e664" }
+.gux-icon-action-chevron-right-25px:before { content: "\e663" }
+.gux-icon-vehicle-chassis-cab:before { content: "\e665" }
+.gux-icon-vehicle-van:before { content: "\e666" }
+.gux-icon-vehicle-people-mover:before { content: "\e667" }
+.gux-icon-vehicle-truck:before { content: "\e668" }
+.gux-icon-vehicle-hatch:before { content: "\e66a" }
+.gux-icon-vehicle-coupe:before { content: "\e66b" }
+.gux-icon-vehicle-estate:before { content: "\e66c" }
+.gux-icon-vehicle-convertible:before { content: "\e66d" }
+.gux-icon-vehicle-suv:before { content: "\e66e" }
+.gux-icon-vehicle-crossover:before { content: "\e66f" }
+.gux-icon-manual-transmission:before { content: "\e670" }
+.gux-icon-vehicle-performance:before { content: "\e671" }
+.gux-icon-vehicle-hybrid:before { content: "\e672" }
+.gux-icon-vehicle-25px:before { content: "\e674" }
+.gux-icon-mobile-nav-shop-25px:before { content: "\e675" }
+.gux-icon-credit-primary-applicant-outline-50px:before { content: "\e677" }
+.gux-icon-mobile-nav-finance-25px:before { content: "\e678" }
+.gux-icon-credit-joint-applicant-outline-50px:before { content: "\e679" }
+.gux-icon-action-chevron-large:before { content: "\e67a" }
+.gux-icon-action-print-outline-50px:before { content: "\e67b" }
+.gux-icon-nav-mobile-owner-25px:before { content: "\e67c" }
+.gux-icon-action-calendar-outline-50px:before { content: "\e67d" }
+.gux-icon-action-chevron-up-25px:before { content: "\e67e" }
+.gux-icon-action-delete-outline-50px:before { content: "\e67f" }
+.gux-icon-action-chevron-down-25px:before { content: "\e680" }
+.gux-icon-locate-dealer-indicator-25px:before { content: "\e681" }
+.gux-icon-nav-profile-signed-out:before { content: "\e683" }
+.gux-icon-footer-globe-west-25px:before { content: "\e686" }
+.gux-icon-social-twitter-outline-50px:before { content: "\e688" }
+.gux-icon-credit-test-drive-solid-50px:before { content: "\e689" }
+.gux-icon-vehicle-outline-50px:before { content: "\e68a" }
+.gux-icon-action-calendar-solid-50px:before { content: "\e68b" }
+.gux-icon-action-send-to-dealer-outline-50px:before { content: "\e68c" }
+.gux-icon-action-delete-solid-50px:before { content: "\e68d" }
+.gux-icon-bp-drive-solid-50px:before { content: "\e68e" }
+.gux-icon-bp-drive-outline-50px:before { content: "\e68f" }
+.gux-icon-credit-special-programs-solid-50px:before { content: "\e690" }
+.gux-icon-credit-special-programs-outline-50px:before { content: "\e691" }
+.gux-icon-extended-service-plan-solid-50px:before { content: "\e692" }
+.gux-icon-credit-test-drive-outline-50px:before { content: "\e693" }
+.gux-icon-extended-service-plan-outline-50px:before { content: "\e694" }
+.gux-icon-bp-ext-solid-50px:before { content: "\e695" }
+.gux-icon-bp-ext-outline-50px:before { content: "\e696" }
+.gux-icon-extras-solid-50px:before { content: "\e697" }
+.gux-icon-extras-outline-50px:before { content: "\e698" }
+.gux-icon-credit-finance-finder-solid-50px:before { content: "\e699" }
+.gux-icon-credit-finance-finder-outline-50px:before { content: "\e69a" }
+.gux-icon-credit-shoppers-guide-outline-50px:before { content: "\e69b" }
+.gux-icon-footer-globe-east-25px:before { content: "\e69c" }
+.gux-icon-generic-article-solid-50px:before { content: "\e69d" }
+.gux-icon-generic-article-outline-50px:before { content: "\e69e" }
+.gux-icon-action-send-to-dealer-solid-50px:before { content: "\e69f" }
+.gux-icon-nav-mobile-hamburger:before { content: "\e6a0" }
+.gux-icon-bp-int-solid-50px:before { content: "\e6a1" }
+.gux-icon-bp-int-outline-50px:before { content: "\e6a2" }
+.gux-icon-credit-joint-applicant-solid-50px:before { content: "\e6a3" }
+.gux-icon-credit-primary-applicant-solid-50px:before { content: "\e6a4" }
+.gux-icon-action-print-solid-50px:before { content: "\e6a5" }
+.gux-icon-credit-commercial-finance-solid-50px:before { content: "\e6a6" }
+.gux-icon-credit-commercial-finance-outline-50px:before { content: "\e6a7" }
+.gux-icon-vehicle-solid-50px:before { content: "\e6a8" }
+.gux-icon-bp-tech-solid-50px:before { content: "\e6aa" }
+.gux-icon-bp-tech-outline-50px:before { content: "\e6ab" }
+.gux-icon-social-twitter-solid-50px:before { content: "\e6ac" }
+.gux-icon-credit-shoppers-guide-solid-50px:before { content: "\e6ad" }
+.gux-icon-close:before { content: "\e6b3" }
+.gux-icon-emergency-call-number-25px:before { content: "\e6b4" }
+.gux-icon-emergency-call-number-outline-50px:before { content: "\e6b5" }
+.gux-icon-emergency-call-number-solid-50px:before { content: "\e6b7" }
+.gux-icon-emergency-call-number-125px:before { content: "\e6b8" }
+.gux-icon-flat-tire-change-25px:before { content: "\e6b9" }
+.gux-icon-flat-tire-change-outline-50px:before { content: "\e6ba" }
+.gux-icon-flat-tire-change-solid-50px:before { content: "\e6bb" }
+.gux-icon-flat-tire-change-rev-125px:before { content: "\e6bc" }
+.gux-icon-fuel-delivery-25px:before { content: "\e6bd" }
+.gux-icon-fuel-delivery-outline-50px:before { content: "\e6be" }
+.gux-icon-fuel-delivery-solid-50px:before { content: "\e6bf" }
+.gux-icon-fuel-delivery-125px:before { content: "\e6c0" }
+.gux-icon-faq-125px:before { content: "\e6c4" }
+.gux-icon-lock-out-assistance-25px:before { content: "\e6c5" }
+.gux-icon-lock-out-assistance-outline-50px:before { content: "\e6c6" }
+.gux-icon-lock-out-assistance-solid-50px:before { content: "\e6c7" }
+.gux-icon-lock-out-assistance-125px:before { content: "\e6c8" }
+.gux-icon-maintenance-schedule-25px:before { content: "\e6c9" }
+.gux-icon-maintenance-schedule-outline-50px:before { content: "\e6ca" }
+.gux-icon-maintenance-schedule-solid-50px:before { content: "\e6cb" }
+.gux-icon-maintenance-schedule-125px:before { content: "\e6cc" }
+.gux-icon-manuals-25px:before { content: "\e6cd" }
+.gux-icon-manuals-outline-50px:before { content: "\e6ce" }
+.gux-icon-manuals-solid-50px:before { content: "\e6cf" }
+.gux-icon-manuals-125px:before { content: "\e6d0" }
+.gux-icon-owner-advantage-rewards-25px:before { content: "\e6d1" }
+.gux-icon-owner-advantage-rewards-outline-50px:before { content: "\e6d2" }
+.gux-icon-owner-advantage-rewards-solid-50px:before { content: "\e6d3" }
+.gux-icon-post-a-message-25px:before { content: "\e6d5" }
+.gux-icon-post-a-message-outline-50px:before { content: "\e6d6" }
+.gux-icon-post-a-message-solid-50px:before { content: "\e6d7" }
+.gux-icon-post-a-message-125px:before { content: "\e6d8" }
+.gux-icon-power-and-engine-25px:before { content: "\e6d9" }
+.gux-icon-power-and-engine-outline-50px:before { content: "\e6da" }
+.gux-icon-power-and-engine-solid-50px:before { content: "\e6db" }
+.gux-icon-power-and-engine-125px:before { content: "\e6dc" }
+.gux-icon-roadside-assistance-25px:before { content: "\e6dd" }
+.gux-icon-roadside-assistance-outline-50px:before { content: "\e6de" }
+.gux-icon-roadside-assistance-solid-50px:before { content: "\e6df" }
+.gux-icon-roadside-assistance-125px:before { content: "\e6e0" }
+.gux-icon-schedule-service-25px:before { content: "\e6e1" }
+.gux-icon-schedule-service-outline-50px:before { content: "\e6e2" }
+.gux-icon-schedule-service-solid-50px:before { content: "\e6e3" }
+.gux-icon-schedule-service-125px:before { content: "\e6e4" }
+.gux-icon-tire-finder-25px:before { content: "\e6e5" }
+.gux-icon-tire-finder-outline-50px:before { content: "\e6e6" }
+.gux-icon-tire-finder-solid-50px:before { content: "\e6e7" }
+.gux-icon-tire-finder-125px:before { content: "\e6e8" }
+.gux-icon-towing-25px:before { content: "\e6e9" }
+.gux-icon-towing-outline-50px:before { content: "\e6ea" }
+.gux-icon-towing-solid-50px:before { content: "\e6eb" }
+.gux-icon-dashboard-indicator-25px:before { content: "\e6ed" }
+.gux-icon-dashboard-indicator-outline-50px:before { content: "\e6ee" }
+.gux-icon-dashboard-indicator-solid-50px:before { content: "\e6ef" }
+.gux-icon-dashboard-indicator-125px:before { content: "\e6f0" }
+.gux-icon-battery-jump-start-outline-25px:before { content: "\e6f1" }
+.gux-icon-battery-jump-start-outline-50px:before { content: "\e6f2" }
+.gux-icon-battery-jump-start-solid-50px:before { content: "\e6f3" }
+.gux-icon-battery-jump-start-125px:before { content: "\e6f4" }
+.gux-icon-action-chat-now-25px:before { content: "\e6f5" }
+.gux-icon-app-link-125px:before { content: "\e6f6" }
+.gux-icon-applink-25px:before { content: "\e6f7" }
+.gux-icon-app-link-outline-50px:before { content: "\e6f8" }
+.gux-icon-app-link-solid-50px:before { content: "\e6f9" }
+.gux-icon-basic-warranty-125px:before { content: "\e6fa" }
+.gux-icon-basic-warranty-25px:before { content: "\e6fb" }
+.gux-icon-basic-warranty-outline-50px:before { content: "\e6fc" }
+.gux-icon-basic-warranty-solid-50px:before { content: "\e6fd" }
+.gux-icon-offers-125px:before { content: "\e6fe" }
+.gux-icon-electrical-125px:before { content: "\e6ff" }
+.gux-icon-electrical-outline-50px:before { content: "\e700" }
+.gux-icon-electrical-solid-50px:before { content: "\e701" }
+.gux-icon-field-service-action-125px:before { content: "\e704" }
+.gux-icon-field-service-action-25px:before { content: "\e705" }
+.gux-icon-field-service-action-outline-50px:before { content: "\e706" }
+.gux-icon-field-service-action-solid-50px:before { content: "\e707" }
+.gux-icon-fixed-capped-price-servicing-125px:before { content: "\e708" }
+.gux-icon-fixed-capped-price-servicing-25px:before { content: "\e709" }
+.gux-icon-fixed-capped-price-servicing-outline-50px:before { content: "\e70a" }
+.gux-icon-fixed-capped-price-servicing-solid-50px:before { content: "\e70b" }
+.gux-icon-ford-custom-accessories-125px:before { content: "\e70c" }
+.gux-icon-ford-custom-accessories-25px:before { content: "\e70d" }
+.gux-icon-ford-custom-accessories-outline-50px:before { content: "\e70e" }
+.gux-icon-ford-custom-accessories-solid-50px:before { content: "\e70f" }
+.gux-icon-ford-magazine-125px:before { content: "\e710" }
+.gux-icon-ford-magazine-25px:before { content: "\e711" }
+.gux-icon-ford-magazine-outline-50px:before { content: "\e712" }
+.gux-icon-ford-magazine-solid-50px:before { content: "\e713" }
+.gux-icon-ford-merchandise-store-125px:before { content: "\e714" }
+.gux-icon-ford-merchandise-store-25px:before { content: "\e715" }
+.gux-icon-ford-merchandise-store-outline-50px:before { content: "\e716" }
+.gux-icon-ford-merchandise-store-solid-50px:before { content: "\e717" }
+.gux-icon-ford-parts-125px:before { content: "\e718" }
+.gux-icon-ford-parts-25px:before { content: "\e719" }
+.gux-icon-ford-parts-outline-50px:before { content: "\e71a" }
+.gux-icon-ford-parts-solid-50px:before { content: "\e71b" }
+.gux-icon-get-rebates-125px:before { content: "\e71d" }
+.gux-icon-get-rebates-25px:before { content: "\e71e" }
+.gux-icon-get-rebates-outline-50px:before { content: "\e71f" }
+.gux-icon-get-rebates-solid-50px:before { content: "\e720" }
+.gux-icon-hands-free-calling-125px:before { content: "\e721" }
+.gux-icon-hands-free-calling-25px:before { content: "\e722" }
+.gux-icon-hands-free-calling-outline-50px:before { content: "\e723" }
+.gux-icon-hands-free-calling-solid-50px:before { content: "\e724" }
+.gux-icon-music-and-media-125px:before { content: "\e725" }
+.gux-icon-music-and-media-25px:before { content: "\e726" }
+.gux-icon-music-and-media-outline-50px:before { content: "\e727" }
+.gux-icon-music-and-media-solid-50px:before { content: "\e728" }
+.gux-icon-owner-app-125px:before { content: "\e729" }
+.gux-icon-owner-app-25px:before { content: "\e72a" }
+.gux-icon-owner-app-outline-50px:before { content: "\e72b" }
+.gux-icon-owner-app-solid-50px:before { content: "\e72c" }
+.gux-icon-service-history-125px:before { content: "\e72f" }
+.gux-icon-service-history-25px:before { content: "\e730" }
+.gux-icon-service-history-outline-50px:before { content: "\e731" }
+.gux-icon-service-history-solid-50px:before { content: "\e732" }
+.gux-icon-settings-25px:before { content: "\e734" }
+.gux-icon-settings-125px:before { content: "\e733" }
+.gux-icon-settings-outline-50px:before { content: "\e735" }
+.gux-icon-settings-solid-50px:before { content: "\e736" }
+.gux-icon-step-by-step-125px:before { content: "\e737" }
+.gux-icon-step-by-step-25px:before { content: "\e738" }
+.gux-icon-step-by-step-outline-50px:before { content: "\e739" }
+.gux-icon-step-by-step-solid-50px:before { content: "\e73a" }
+.gux-icon-support-how-tos-125px:before { content: "\e73b" }
+.gux-icon-support-how-tos-25px:before { content: "\e73c" }
+.gux-icon-support-how-tos-outline-50px:before { content: "\e73d" }
+.gux-icon-support-how-tos-solid-50px:before { content: "\e73e" }
+.gux-icon-sync-how-tos-125px:before { content: "\e73f" }
+.gux-icon-sync-how-tos-25px:before { content: "\e740" }
+.gux-icon-sync-how-tos-outline-50px:before { content: "\e741" }
+.gux-icon-sync-how-tos-solid-50px:before { content: "\e742" }
+.gux-icon-update-your-sync-125px:before { content: "\e743" }
+.gux-icon-update-your-sync-25px:before { content: "\e744" }
+.gux-icon-update-your-sync-outline-50px:before { content: "\e745" }
+.gux-icon-update-your-sync-solid-50px:before { content: "\e746" }
+.gux-icon-vehicle-health-report-125px:before { content: "\e747" }
+.gux-icon-vehicle-health-report-25px:before { content: "\e748" }
+.gux-icon-vehicle-health-report-outline-50px:before { content: "\e749" }
+.gux-icon-vehicle-health-report-solid-50px:before { content: "\e74a" }
+.gux-icon-vehicle-report-card-125px:before { content: "\e74b" }
+.gux-icon-vehicle-report-card-25px:before { content: "\e74c" }
+.gux-icon-vehicle-report-card-outline-50px:before { content: "\e74d" }
+.gux-icon-vehicle-report-card-solid-50px:before { content: "\e74e" }
+.gux-icon-voice-commands-125px:before { content: "\e74f" }
+.gux-icon-voice-commands-25px:before { content: "\e750" }
+.gux-icon-voice-commands-outline-50px:before { content: "\e751" }
+.gux-icon-voice-commands-solid-50px:before { content: "\e752" }
+.gux-icon-vehicle-truck-675-box:before { content: "\e753" }
+.gux-icon-vehicle-truck-regular-cab:before { content: "\e754" }
+.gux-icon-vehicle-truck-8-box:before { content: "\e755" }
+.gux-icon-vehicle-truck-super-cab:before { content: "\e757" }
+.gux-icon-vehicle-transit-wagon:before { content: "\e759" }
+.gux-icon-vehicle-e-series-wagon-elongated:before { content: "\e75b" }
+.gux-icon-account-manager-50px:before { content: "\ef01" }
+.gux-icon-apply-at-dealership-50px:before { content: "\ef02" }
+.gux-icon-commercial-truck-landing-page-50px:before { content: "\ef03" }
+.gux-icon-contact-fleet-manager-50px:before { content: "\ef04" }
+.gux-icon-contact-us-support-50px:before { content: "\ef05" }
+.gux-icon-credit-financial-50px:before { content: "\ef06" }
+.gux-icon-credit-investor-50px:before { content: "\ef07" }
+.gux-icon-finance-options-compare-grid-50px:before { content: "\ef08" }
+.gux-icon-finance-options-tool-50px:before { content: "\ef09" }
+.gux-icon-fleet-landing-page-50px:before { content: "\ef10" }
+.gux-icon-lease-end-process-information-rev-50px:before { content: "\ef11" }
+.gux-icon-my-next-ford-50px:before { content: "\ef12" }
+.gux-icon-online-credit-application-50px:before { content: "\ef13" }
+.gux-icon-owner-landing-page-50px:before { content: "\ef14" }
+.gux-icon-pay-my-bill-50px:before { content: "\ef15" }
+.gux-icon-self-help-faqs-50px:before { content: "\ef16" }
+.gux-icon-shopping-guide-50px:before { content: "\ef17" }
+.gux-icon-vehicle-protection-insurance-services-50px:before { content: "\ef18" }
+.gux-icon-vehicle-protection-landing-page-50px:before { content: "\ef19" }
+.gux-icon-vehicle-showroom-50px:before { content: "\ef20" }
+.gux-icon-vehicle-protection-wearcare-for-lease-50px:before { content: "\ef21" }
+.gux-icon-account-manager-outline-50px:before { content: "\ef22" }
+.gux-icon-apply-at-dealership-outline-50px:before { content: "\ef23" }
+.gux-icon-commercial-truck-landing-page-outline-50px:before { content: "\ef24" }
+.gux-icon-contact-fleet-manager-outline-50px:before { content: "\ef25" }
+.gux-icon-contact-us-support-outline-50px:before { content: "\ef26" }
+.gux-icon-credit-financial-outline-50px:before { content: "\ef27" }
+.gux-icon-credit-investor-outline-50px:before { content: "\ef28" }
+.gux-icon-finance-options-compare-grid-outline-50px:before { content: "\ef29" }
+.gux-icon-finance-options-compare-grid-outline-50px copy:before { content: "\ef30" }
+.gux-icon-fleet-landing-page-outline-50px:before { content: "\ef31" }
+.gux-icon-lease-end-process-information-outline-50px:before { content: "\ef32" }
+.gux-icon-my-next-ford-outline-50px:before { content: "\ef33" }
+.gux-icon-online-credit-application-outline-50px:before { content: "\ef34" }
+.gux-icon-online-credit-application-outline-50px copy 2:before { content: "\ef35" }
+.gux-icon-pay-my-bill-outline-50px:before { content: "\ef36" }
+.gux-icon-self-help-faqs-outline-50px:before { content: "\ef37" }
+.gux-icon-shopping-guide-outline-50px:before { content: "\ef38" }
+.gux-icon-vehicle-protection-landing-page-outline-50px:before { content: "\ef39" }
+.gux-icon-vehicle-protection-insurance-services-outline-50px:before { content: "\ef40" }
+.gux-icon-vehicle-showroom-outline-50px:before { content: "\ef41" }
+.gux-icon-vehicle-protection-wearcare-for-lease-outline-50px:before { content: "\ef42" }
+.gux-icon-vehicle-sedan:before { content: "\e027" }
+.gux-icon-mail:before {content: "\e904";}
+.gux-icon-wechat:before {content: "\e905";}
+.gux-icon-weibo:before {content: "\e906";}
+/************************************/
+
+@font-face {
+  font-family: 'lincoln-icons';
+  src:  url('#{$gux-icons}lincoln-icons.eot?fm7bn3');
+  src:  url('#{$gux-icons}lincoln-icons.eot?fm7bn3#iefix') format('embedded-opentype'),
+    url('#{$gux-icons}lincoln-icons.ttf?fm7bn3') format('truetype'),
+    url('#{$gux-icons}lincoln-icons.woff?fm7bn3') format('woff'),
+    url('#{$gux-icons}lincoln-icons.svg?fm7bn3#lincoln-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="lincoln-"], [class*=" lincoln-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'lincoln-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lincoln-icon_print:before {
+  content: "\e928";
+}
+.lincoln-icon_detail-information:before {
+  content: "\e925";
+}
+.lincoln-icon_location:before {
+  content: "\e926";
+}
+.lincoln-icon_navigation:before {
+  content: "\e927";
+}
+.lincoln-icon_add:before {
+  content: "\e900";
+}
+.lincoln-icon_apply:before {
+  content: "\e901";
+}
+.lincoln-icon_arrow-down-thin:before {
+  content: "\e902";
+}
+.lincoln-icon_arrow-down:before {
+  content: "\e903";
+}
+.lincoln-icon_arrow-left-thin:before {
+  content: "\e904";
+}
+.lincoln-icon_arrow-left:before {
+  content: "\e905";
+}
+.lincoln-icon_arrow-right-thin:before {
+  content: "\e906";
+}
+.lincoln-icon_arrow-right:before {
+  content: "\e907";
+}
+.lincoln-icon_arrow-up-thin:before {
+  content: "\e908";
+}
+.lincoln-icon_arrow-up:before {
+  content: "\e909";
+}
+.lincoln-icon_attention:before {
+  content: "\e90a";
+}
+.lincoln-icon_check:before {
+  content: "\e90b";
+}
+.lincoln-icon_close-thin:before {
+  content: "\e90c";
+}
+.lincoln-icon_close:before {
+  content: "\e90d";
+}
+.lincoln-icon_douban:before {
+  content: "\e90e";
+}
+.lincoln-icon_download-thin:before {
+  content: "\e90f";
+}
+.lincoln-icon_email-outline-square:before {
+  content: "\e910";
+}
+.lincoln-icon_email-solid-square:before {
+  content: "\e911";
+}
+.lincoln-icon_email-solid:before {
+  content: "\e912";
+}
+.lincoln-icon_email-outline:before {
+  content: "\e913";
+}
+.lincoln-icon_file:before {
+  content: "\e914";
+}
+.lincoln-icon_hotline-outline-square:before {
+  content: "\e915";
+}
+.lincoln-icon_hotline-outline:before {
+  content: "\e916";
+}
+.lincoln-icon_hotline-solid:before {
+  content: "\e917";
+}
+.lincoln-icon_menu:before {
+  content: "\e918";
+}
+.lincoln-icon_pdf:before {
+  content: "\e919";
+}
+.lincoln-icon_play-thin:before {
+  content: "\e91a";
+}
+.lincoln-icon_play:before {
+  content: "\e91b";
+}
+.lincoln-icon_ren-ren:before {
+  content: "\e91c";
+}
+.lincoln-icon_search:before {
+  content: "\e91d";
+}
+.lincoln-icon_share-thin:before {
+  content: "\e91e";
+}
+.lincoln-icon_sign:before {
+  content: "\e91f";
+}
+.lincoln-icon_tencent-weibo:before {
+  content: "\e920";
+}
+.lincoln-icon_wechat-square:before {
+  content: "\e921";
+}
+.lincoln-icon_wechat:before {
+  content: "\e922";
+}
+.lincoln-icon_weibo-square:before {
+  content: "\e923";
+}
+.lincoln-icon_weibo:before {
+  content: "\e924";
+}
+.lincoln-icon_plus:before {
+  content: "\e622";
+}
+.lincoln-icon_minus:before {
+  content: "\e01b";
+}

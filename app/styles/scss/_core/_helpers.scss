@@ -1,0 +1,163 @@
+img {
+  max-width: 100%;
+}
+
+.bg-white {
+  background: $white;
+}
+.bg-lightest-grey {
+  background: $bg-lightest-grey;
+}
+.bg-light-grey {
+  background: $bg-light-grey;
+}
+.bg-grey {
+  background: $bg-grey;
+}
+
+// Bootstrap Goodness
+.img-responsive{
+    width: 100%;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+// animation
+// Slide Down
+// Used in : Main Menu dropdown Sliding down
+@include keyframes(slide-down) {
+  0% {
+    @include transform(translate3d(0, -10%, 0));
+    opacity: 0;
+  }
+  90% {
+    @include transform(translate3d(0, 0, 0));
+    opacity: 1;
+  }
+}
+.slide-down {
+  @include animation('slide-down .3s ease-out');
+}
+
+// Slide Left
+// Used in Mobile Main Navigation Dropdown 2nd Level slide left
+@include keyframes(slide-left) {
+  0% {
+    @include transform(translate3d(-50%, 0, 0));
+  }
+  90% {
+    @include transform(translate3d(0, 0, 0));
+  }
+}
+.slide-left {
+  @include animation('slide-left .3s ease-out');
+}
+
+// Slide Right
+// Used in Mobile Main Navigation Dropdown 2nd Level slide right
+@include keyframes(slide-right) {
+  0% {
+    @include transform(translate3d(50%, 0, 0));
+  }
+  90% {
+    @include transform(translate3d(0, 0, 0));
+  }
+}
+.slide-right {
+  @include animation('slide-right .3s ease-out');
+}
+
+// Rotate Up
+// Used in Navigation Arrow
+@include keyframes(rotate-up) {
+  0% {
+    @include transform(rotate(0deg));
+  }
+  100% {
+    @include transform(rotate(180deg));
+  }
+}
+.rotate-up {
+  @include animation('rotate-up .3s ease-out');
+  animation-fill-mode: forwards;
+}
+
+// Rotate Right
+// Used in Navigation Arrow
+@include keyframes(rotate-right) {
+  0% {
+    @include transform(rotate(0deg));
+  }
+  100% {
+    @include transform(rotate(-90deg));
+  }
+}
+.rotate-right {
+  @include animation('rotate-right .3s ease-out');
+  animation-fill-mode: forwards;
+}
+
+// Rotate Down
+// Used in Navigation Arrow
+@include keyframes(rotate-down) {
+  0% {
+    @include transform(rotate(180deg));
+  }
+  100% {
+    @include transform(rotate(0deg));
+  }
+}
+.rotate-down {
+  @include animation('rotate-down .3s ease-out');
+  animation-fill-mode: forwards;
+}
+
+// Rotate 45degree
+// Used in mini LAD map expandable button
+.rotate-45degree {
+  @include transform(rotate(45deg));
+}
+
+// Slide Out Left
+// Used in Billboard Panel
+@include keyframes(slide-out-left) {
+  0% {
+    @include transform(translate3d(0, 0, 0));
+  }
+  100% {
+    @include transform(translate3d(-93%, 0, 0));
+  }
+}
+
+.slide-out-left {
+  @include animation('slide-out-left .3s ease-out');
+  animation-fill-mode: forwards;
+}
+
+// Image Zoom In
+.image-zoom {
+  overflow: hidden;
+  cursor: pointer;
+  img {
+    @include transition(all .5s ease .1s);
+    @include transform(scale(1.01) translateZ(0));
+  }
+  &:hover {
+    img {
+      @include transform(scale(1.08) translateZ(0));
+    }
+  }
+}
+
+
+//Image Black Overlay
+.image-overlay {
+  opacity: 0.4;
+  transition: all 1s ease;
+  &:hover {
+    opacity: 1;
+  }
+}

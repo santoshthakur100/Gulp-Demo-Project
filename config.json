@@ -1,0 +1,31 @@
+{
+	"browsersync" : "./app",
+	"scss" : {
+		"src" : "./app/styles/scss/**/*.scss",
+		"base" : "./app/styles/scss/style.scss",
+		"iedest" : "./app/styles/css/ie",
+		"dest" : "./app/styles/css",
+		"ignore": "!./app/styles/css/bootstrap-rtl.min.css",
+		"filename" : "style.css"
+	},
+
+	"js" : {
+		"filename": "main.js",
+		"src" : "./app/scripts/components/**/*.js",
+		"dest" : "./app/scripts",
+		"libfilename" : "main.js",
+		"libfiles":[
+			"./app/scripts/lib/require.js",
+			"./app/scripts/lib/jquery.min.js",
+			"./app/scripts/lib/modernizr.js",
+			"./app/scripts/lib/bootstrap.min.js"
+		]
+	},
+
+	"html" : {
+		"src" : "./www/html/*.html",
+		"components" : "./www/html-components/**/*.html",
+		"dest" : "./www"
+	}
+
+}

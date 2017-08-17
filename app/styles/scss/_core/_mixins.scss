@@ -1,0 +1,75 @@
+// declare common mixins here
+@mixin inline-block($vertical-align) {
+    display: inline-block;
+    vertical-align: $vertical-align;
+}
+
+@mixin sprite($left, $top, $width, $height) {
+    background: url('../../assets/images/sprite.png') no-repeat;
+    background-position: $left $top;
+    width: $width;
+    height: $height;
+    display: block;
+    @include breakpoint(sm) {
+        background: url('../../assets/images/sprite@2x.png') no-repeat;
+    }
+}
+
+@mixin flex-center($justify-content, $align) {
+    justify-content: $justify-content;
+    display: flex;
+    align-items: $align;
+}
+
+@mixin drop-shadow($horizontal, $vertical, $blur, $spread, $colorOpacity) {
+    -webkit-box-shadow: $horizontal $vertical $blur $spread $colorOpacity;
+    -moz-box-shadow: $horizontal $vertical $blur $spread $colorOpacity;
+    box-shadow: $horizontal $vertical $blur $spread $colorOpacity;
+}
+
+@mixin transform($transform) {
+    transform: $transform;
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -o-transform: $transform;
+    -ms-transform: $transform;
+}
+
+@mixin transition($property) {
+    transition: $property;
+}
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+@mixin transition($transition) {
+  -o-transition: $transition;
+  -ms-transition: $transition;
+  -moz-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+} 
+//@include transition(all 0.5s ease);

@@ -1,0 +1,17 @@
+@mixin breakpoint($sreen) {
+  @if $sreen == xlg {
+    @media (min-width: 1440px) { @content ; }
+  }
+  @else if $sreen == lg {
+    @media (min-width: 992px) and (max-width: 1339px) { @content ; }
+  }
+  @else if $sreen == md {
+    @media (min-width: 768px) and (max-width: 991px) { @content ; }
+  }
+  @else if $sreen == sm {
+    @media only screen and (max-width: 767px) { @content ; }
+  }
+  @else if $sreen == xs {
+    @media only screen and (min-width: 320px) and (max-width: 479px)  { @content ; }
+  }
+}

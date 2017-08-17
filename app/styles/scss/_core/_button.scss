@@ -1,0 +1,171 @@
+// Button styling
+.button-wrapper {
+  .bg-grey {
+    padding: 20px;
+  }
+  .show-grid {
+    margin-bottom: 20px;
+  }
+}
+
+a.btn{
+  text-decoration: none !important;
+}
+
+.btn {
+  @include transition(all .3s ease-out);
+  border-radius: 0;
+  padding: 10px 40px 10px 60px;
+  font-size: 20px;
+
+  @include breakpoint(sm) {
+    padding: 10px 20px 10px 30px;
+    font-size: 13px;
+  }
+  
+  span {
+    @include inline-block(text-top);
+    margin-left: 15px;
+  }
+  
+  &.full-width {
+    width: 100%;
+  }
+
+  &.btn-icon-left{
+    span{
+      margin:0 15px 0 0;
+    }
+  }
+
+  &.btn-icon {
+    padding: 10px 30px;
+    line-height: 2;
+    text-align: left;
+    span, i {
+      @include inline-block(middle);
+      font-size: 35px;
+      margin-top: -5px;
+      margin-left: 0;
+    }
+  }
+
+  &.btn-small {
+    font-size: 16px;
+    padding: 8px 25px;
+
+    span {
+      margin-left: 3px;
+    }
+
+    @include breakpoint(sm) {
+      font-size: 13px;
+    }
+  }
+
+  &:hover {
+    background: $white;
+    border: 1px solid $dark-gold;
+    color: $dark-gold;
+  }
+}
+
+.btn-solid {
+  &.bg-gold {
+    background: $gold;
+    color: $white;
+    &:hover {
+      background: $white;
+      color: $dark-gold;
+    }
+  }
+  &.outline-gold {
+    border: 1px solid $gold;
+    color: $gold;
+    &:hover {
+      border: 1px solid $dark-gold;
+      color: $dark-gold;
+    }
+  }
+}
+
+.btn-outline {
+  &.black {
+    border: 1px solid $black;
+    color: $black;
+  }
+  &.white {
+    border: 1px solid $white;
+    color: $white;
+    &:hover {
+      background: $white;
+      border: 1px solid $dark-gold;
+      color: $dark-gold;
+    }
+  }
+
+  &.btn-medium{
+    padding:10px 25px;
+    font-size:16px;
+  }
+}
+
+.btn-icon {
+  color: $white;
+  @include inline-block(middle);
+  @include transition(all .3s ease-out);
+  span {
+    @include inline-block(bottom);
+  }
+}
+
+.btn-share {
+  span {
+    font-size: 20px;
+    margin-right: 8px;
+    font-weight: bold;
+  }
+}
+
+.btn-play {
+  font-size: 40px;
+  &:hover {
+    color: $gold;
+  }
+}
+
+.btn-close {
+  background: rgba(79,76,67, .6);
+  padding: 5px;
+  font-size: 25px;
+  &:hover, &:active {
+    background: rgba(79,76,67, .6);
+    color: $white;
+  }
+}
+
+.btn-tranlucent {
+  width: 100%;
+  background: rgba(79,76,67,.6);
+  color: $white;
+  padding: 20px;
+  &:hover {
+    background: rgba(180,95,26,.6);
+    color: $white;
+  }
+}
+
+.text-link {
+  color: $gold;
+  text-decoration: underline;
+  @include inline-block(middle);
+  span {
+    @include inline-block(middle);
+  }
+  &.arrow {
+    text-decoration: none;
+  }
+  &:hover {
+    color: $dark-gold;
+  }
+}
